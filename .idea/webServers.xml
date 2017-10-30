@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="734d8fcf-2c52-4cac-a3ef-0f36f0650365" name="App.io 8888" url="http://app.io:8888">
+        <fileTransfer port="0" mountedRoot="$USER_HOME$/App.io" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

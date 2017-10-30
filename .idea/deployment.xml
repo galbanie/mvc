@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="App.io 8888">
+    <serverData>
+      <paths name="App.io 8888">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mvc" local="$PROJECT_DIR$" web="/mvc" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
