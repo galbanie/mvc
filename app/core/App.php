@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL ^ E_STRICT);
+
 /**
  * Created by PhpStorm.
  * User: Galbanie
@@ -34,7 +36,7 @@ class App {
         // Get broken up URL
         $url = $this->parseUrl();
         // Error Handler Init
-
+        $this->initWhoopsErrorHandler();
         // Does the requested controller exist?
         // If so, set it and unset from URL array
         if(file_exists('../app/controllers/'.ucfirst($url[0]).'.php')){
@@ -42,6 +44,7 @@ class App {
             unset($url[0]);
         }
         require_once '../app/controllers/'.ucfirst($this->controller).'.php';
+        $this->controller = new $this->controller();
         // Has a second parameter been passed?
         // If so, it might be the requested method
         if (isset($url[1])) {

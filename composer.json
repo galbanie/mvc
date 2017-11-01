@@ -1,6 +1,16 @@
 {
     "require": {
+        "illuminate/database": "4.1.*",
         "filp/whoops": "^2.1",
         "twig/twig": "1.6.5"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models",
+            "app/core"
+        ],
+        "files": [
+            "app/database.php"
+        ]
     }
 }
