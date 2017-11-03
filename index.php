@@ -2,13 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: Galbanie
- * Date: 2017-10-25
- * Time: 19:27
+ * Date: 2017-10-27
+ * Time: 10:28
  */
+/*if (in_array('mod_rewrite', apache_get_modules())) {
+    echo "Yes, Apache supports mod_rewrite.";
+}
 
-/*
- * If the public directory is not the root directoy and the user tries to access
- * the project folder, redirect to the public directory.
- */
-header('Location: public/');
-die();
+else {
+    echo "Apache is not loading mod_rewrite.";
+}*/
+require_once 'app/start.php';
+$app = new App();
